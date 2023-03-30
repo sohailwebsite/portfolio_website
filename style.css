@@ -1,0 +1,265 @@
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Kalam', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* scroll aroow */
+
+.scroll{
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+}
+
+.scroll a span{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background-color: turquoise;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("images/banner1.jpg");
+  background-size: cover;
+}
+
+/* container section*/
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .left {
+  flex-basis: 60%;
+  color: white;
+  font-family: "Kalam", cursive;
+}
+
+.container .left button {
+  margin-top: 15px;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+   background-color: turquoise;
+}
+
+.container .right {
+  flex-basis: 40%;
+}
+
+.container .right img {
+  height: 100vh;
+}
+
+/* about section */
+
+.about {
+  padding: 0px 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: right;
+  margin-top: 100px;
+  font-family: "Kanit", sans-serif;
+}
+
+.about .left {
+  flex-basis: 40%;
+}
+
+.about .right {
+  flex-basis: 60%;
+  padding: 0px 40px;
+}
+
+.about .bio {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.about .right h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.about .right .para {
+  line-height: 30px;
+  text-align: justify;
+}
+
+.about .left img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.about .main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.about .font-icon {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.font-icon i {
+  font-size: 25px;
+  padding: 0px 10px;
+  color: turquoise;
+}
+
+.about .main-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+.about .main-btn button {
+  text-align: center;
+  margin-top: 15px;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: turquoise;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+/* information section */
+
+.info {
+  padding: 50px 75px;
+  background-color: gainsboro;
+  margin-top: 100px;
+  padding-top: 25px;
+  font-family: "Kanit", sans-serif;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.card {
+  flex-basis: 30%;
+  padding: 15px 15px;
+  text-align: center;
+  box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+}
+
+.card:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card i {
+  font-size: 25px;
+  color: turquoise;
+}
+
+.card h3 {
+  font-size: 25px;
+}
+
+/*footer work section */
+
+.card img {
+  width: 100%;
+}
+
+.footer,
+.copyright {
+  padding: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(19, 18, 18);
+}
+
+.about-us {
+  flex-basis: 50%;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.follow-us {
+  flex-basis: 50%;
+  text-align: right;
+   color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.copyright{
+  background-color: black;
+  color: white;
+  font-family: 'Kalam', cursive;
+
+}
+
+/* media query in css */
+
+@media screen and (max-width: 400px) {
+
+  .scroll a span{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+  .container .right img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+.container .right img{
+    width: 100%;
+  }
+
+  .about{
+    display: none;
+  }
+
+ .info .card-wrapper {
+  display: block;
+}
+
+.info .card{
+  margin-bottom:15px;
+}
+
+}
+
+
